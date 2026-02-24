@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  body {
+    @apply bg-surface text-navy antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 
+           bg-sky text-white font-heading font-semibold text-lg
+           rounded-2xl transition-all duration-300
+           hover:bg-sky-light hover:shadow-glow hover:scale-[1.02]
+           focus:outline-none focus:ring-2 focus:ring-sky focus:ring-offset-2 focus:ring-offset-navy;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 
+           border-2 border-white/30 text-white font-heading font-semibold text-lg
+           rounded-2xl transition-all duration-300
+           hover:border-white hover:bg-white/10 hover:scale-[1.02]
+           focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-navy;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-hover;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-sky to-sky-light bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(74, 144, 217, 0.3);
+  color: #0B1C3D;
+}
