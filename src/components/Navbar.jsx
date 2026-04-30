@@ -7,6 +7,7 @@ const Navbar = ({ isScrolled }) => {
 
   const navLinks = [
     { name: 'Services', href: '#services' },
+    { name: 'Pricing', href: '#pricing' },
     { name: 'About', href: '#about' },
     { name: 'Process', href: '#process' },
     { name: 'Contact', href: '#contact' },

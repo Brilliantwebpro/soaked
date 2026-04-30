@@ -7,6 +7,7 @@ import Services from './components/Services'
 import BeforeAfter from './components/BeforeAfter'
 import Process from './components/Process'
 import Testimonials from './components/Testimonials'
+import Pricing from './components/Pricing'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 
@@ -29,6 +30,7 @@ function App() {
         <TrustBar />
         <About />
         <Services />
+        <Pricing />
         <BeforeAfter />
         <Process />
         <Testimonials />
